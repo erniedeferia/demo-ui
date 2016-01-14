@@ -1,0 +1,22 @@
+<div data-bind="component: { name: 'todo-menu', params: {route: route}} "></div>
+
+<div class='row'>
+
+  <div class='col-md-6'>
+    <h2 data-bind="text: item().title"></h2>
+    <h3 data-bind="text: item().style"></h3>
+  </div>
+
+  <div class='col-md-6'>
+    <div class='row'>
+      <div class='col-md-12'' data-bind="text: itemSummary"></div>
+    </div>
+    <div class='row'>
+     <div class='col-md-12'>
+      <h3>Due Date</h3>
+      <span data-bind="text: item().due_date"></span>
+     </div>
+    </div>
+  </div>
+
+</div>

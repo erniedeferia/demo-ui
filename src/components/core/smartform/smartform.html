@@ -1,0 +1,40 @@
+<form class='contact-form'>
+
+  <div class='row'>
+    <div class='col-md-6 col-md-offset-1'>
+      <span data-bind="foreach: fields">
+
+        <div data-bind="if: ($data.type === 'string' && $data.control === 'input')">
+          <input type='text'
+                 data-bind="value: $data.value, attr: {name: $data.name, placeholder: $data.label}">
+           </input>
+        </div>
+        <div data-bind="if: $data.type === 'date'">
+          <input type='text'
+                 data-bind="value: $data.value, datepicker, attr: {class: 'datepicker', name: $data.name, placeholder: $data.label}">
+           </input>
+        </div>
+        <div data-bind="if: ($data.type === 'string' && $data.control === 'textarea')">
+          <textarea type='text'
+                    data-bind="value: $data.value, attr: {name: $data.name, placeholder: $data.label}">
+          </textarea>
+        </div>
+        <div class='list'  data-bind="if: ($data.type === 'select')">
+          <select
+             data-bind="options: $data.values,
+                        optionsText: 'label',
+                        value: $data.value,
+                        optionsCaption: $data.label">
+          </select>
+        </div>
+      </span>
+    </div>
+    <div class='col-md-5'>
+      <button data-bind="click: action"
+              class="btn-send btn-5 btn-5b ion-ios-plus-outline">
+        <span>Add Matter</span>
+      </button>
+    </div>
+  </div>
+
+</form>

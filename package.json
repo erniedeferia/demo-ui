@@ -1,0 +1,29 @@
+{
+  "name": "smartuiclient",
+  "version": "0.0.0",
+  "devDependencies": {
+    "chalk": "~0.4.0",
+    "deeply": "~0.1.0",
+    "event-stream": "~3.1.0",
+    "gulp": "^3.6.2",
+    "gulp-babel": "^5.2.1",
+    "gulp-clean": "~0.2.4",
+    "gulp-concat": "~2.2.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-filter": "^3.0.1",
+    "gulp-html-replace": "~1.0.0",
+    "gulp-modernizr": "0.0.0",
+    "gulp-replace": "~0.2.0",
+    "gulp-requirejs-bundler": "^0.1.1",
+    "gulp-uglify": "~0.2.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-babel-preprocessor": "^5.2.2",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-requireglobal-preprocessor": "0.0.0",
+    "karma-requirejs": "^0.2.2",
+    "object-assign": "^4.0.1",
+    "requirejs": "^2.1.11"
+  }
+}

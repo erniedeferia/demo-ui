@@ -1,0 +1,109 @@
+/* Mixin */
+
+#page {
+	margin-top: 80px;
+}
+
+.dashboard-box {
+	background: none;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 1px;
+	position: relative;
+	transition: all 0.3s;
+        height: 200px;
+        width: 100%;
+}
+
+.dashboard-box-large{
+	background: none;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	display: block;
+	letter-spacing: 1px;
+	position: relative;
+	transition: all 0.3s;
+        height: 400px;
+        width: 100%;
+}
+
+.dashboard-box #header {
+    font-weight: normal;
+    font-size: medium;
+    padding: 5px;
+}
+
+.dashboard-box-header {
+
+}
+
+.dashboard-box-content {
+    position: relative;
+    top: 20px;
+}
+
+
+
+a .accessor {
+	padding: 10px 0;
+        color: #000;
+	text-shadow: none;
+}
+
+.accessor::before {
+    content: '\f3d3';
+    font-family: "Ionicons";
+    /*    position: absolute; */
+    position: relative;
+    left: -5px;
+/*     top: 3px; */
+    font-size: 1.1em;
+    color: #000;
+}
+
+
+#page {
+    margin-top: 20px !important;
+}
+
+.initial-state-box {
+    background: none;
+    background-color: #ffffff;
+    border: 1px solid #fefefe;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.3s;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.initial-state-box-command {
+    font-size: 1.4em;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+ }
+
+.initial-state-box-command a {
+   font-size: 1.2em;
+   color: #898989;
+   vertical-align: middle;
+ }
+
+.body {
+    font-family: 'Lato', sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 100;
+    line-height: 1.1;
+    color: inherit;
+}

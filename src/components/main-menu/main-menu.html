@@ -1,0 +1,62 @@
+<header id="site-header">
+  <div class="row">
+    <div class="col-md-4 col-sm-5 col-xs-8">
+      <div class="logo">
+        <h1><a href="index.html">demo ui</h1>
+      </div>
+    </div><!-- col-md-4 -->
+    <div class="col-md-8 col-sm-7 col-xs-4">
+      <nav class="main-nav" role="navigation">
+        <div class="navbar-header">
+          <button data-bind="click: menu_misc.toggleOverlay" type="button" id="trigger-overlay" class="navbar-toggle">
+            <span class="ion-navicon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="cl-effect-11" data-bind="css: { active: route().page === 'dashboard'}">
+              <a href="index.html" data-hover="Dashboard">Dashboard</a>
+            </li>
+            <li class="cl-effect-11"  data-bind="css: { active: route().page === 'help'}">
+              <a href="#help" data-hover="Help">Help</a>
+            </li>
+            <li class="cl-effect-11"  data-bind="css: { active: route().page === 'todos-index'}">
+              <a href="#todos/show" data-hover="Test">Test</a>
+            </li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="header-search-box">
+	<a id="search-menu" href="#" data-bind="click: menu_misc.searchClick">
+          <span id="search-icon" class="ion-ios-search-strong"></span></a>
+	<div id="search-form" class="search-form">
+	  <form role="search" method="get" id="searchform" action="#">
+	    <input type="search" placeholder="Search" required>
+	    <button type="submit" data-bind="click: search"><span class="ion-ios-search-strong"></span></button>
+	  </form>
+	</div>
+      </div>
+
+
+
+    </div><!-- col-md-8 -->
+  </div>
+</header>
+
+
+    <!-- Mobile Menu -->
+    <div class="overlay overlay-hugeinc">
+      <button data-bind="click: menu_misc.toggleOverlay" type="button" class="overlay-close">
+        <span class="ion-ios-close-empty"></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#actions">Actions</a></li>
+          <li><a href="#help">Help</a></li>
+        </ul>
+      </nav>
+    </div>

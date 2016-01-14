@@ -1,0 +1,59 @@
+Provision Development Environment
+------------------------------------------------------
+
+Resources:
+Steve Sanderson Architecting large SPA with Knockout.JS: https://vimeo.com/97519516
+https://github.com/SteveSanderson/generator-ko
+
+
+1. Install node
+ $ brew install node
+
+2. Install Yeoman
+ $ npm install -g yo
+
+3. Install Yeoman KO template
+ $ npm install -g generator-ko
+
+4. Install Bower & Gulp
+ $ npm install -g bower
+ $ npm install -g gulp
+
+4.a Install Babel packages
+ $ [sudo] npm install gulp-core
+ $ [sudo] npm install gulp-babel
+
+5. Install http-server for quick http rendering
+ $ npm install -g http-server
+
+6. Scaffolding the app
+ $ yo ko
+
+7. Scaffold a new component
+ $ yo ko:component smartform
+
+
+9. Install and use Karma (CLI test runner)
+ $ npm install -g karma
+
+10. Adding a reference to a bower library
+ UPDATE: THIS PARTICULAR LIBRARY WAS REMOVED
+ a. $  bower install --save xregexp
+ b. Add a reference to it in require.configjs
+    "xregexp":"bower_modules/xregexp/xregexp"
+ c. Then import it into the module that will use it
+   import xregexp from 'xregexp';
+
+11. Constructed the AMD/Require.js compatible module for PouchDB
+ #
+ # Note that the ouput file 'pouchdb-require.js' was then manually copied to the
+ # bower_modules/pouchdb/dist/ directory. This task must be repeated if PouchDB
+ # is upgraded or if this is being configured on a new instance. This is only
+ # for development purposes.
+ #
+ $ nmp install -g requirejs
+ $ r.js  -o baseUrl=src/bower_modules/pouchdb/dist/ paths.pouchdb=pouchdb out=pouchdb-require.js
+
+
+12. Install gulp-modernizr
+ $ npm install --save-dev gulp-modernizr
